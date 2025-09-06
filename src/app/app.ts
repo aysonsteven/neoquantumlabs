@@ -8,7 +8,7 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('neoquantum');
-  readonly yr = new Date().getFullYear();
+  readonly year = new Date().getFullYear();
 
   constructor() {
     // Defer to ensure document.head is ready
