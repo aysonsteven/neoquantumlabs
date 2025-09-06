@@ -16,10 +16,12 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('should render coming soon brand', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, neoquantum');
+    const h1Text = compiled.querySelector('h1.brand')?.textContent ?? '';
+    expect(h1Text).toContain('NeoQuantum');
+    expect(h1Text).toContain('Software Labs');
   });
 });

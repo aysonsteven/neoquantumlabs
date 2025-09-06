@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Base reset and background to prevent white flash */
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background: #07080d;
+	color-scheme: dark;
+}
